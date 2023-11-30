@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Encapsulamientos</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+
+         <!--  INICIO NAV VAR            -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Menú</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Temas
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="honeyindex.html">Honey Nets</a></li>
+                                <li><a class="dropdown-item" href="tunnelingindex.html">tunelización</a></li>
+                                <li><a class="dropdown-item" href="iotindex.html">IoT</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipo.html">Equipo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+ <!--  FIN NAV VAR            -->
+
+
+  <!-- Inicio Primera sección           -->
+        <div class="container my-3">
+            <div class="row animate__animated animate__rubberBand">
+                <h1 class="display-3" style="font-family: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Encapsulamiento de Paquetes</h1>
+                <p class="text-justify">
+                    La encapsulación es un proceso esencial en las comunicaciones de red que se lleva a cabo en una secuencia específica de pasos. Primero, el dato original se divide en unidades más pequeñas llamadas paquetes. Estos paquetes, además de contener los datos, son equipados con encabezados que contienen información esencial, como las direcciones de origen y destino. En el contexto de tunneling, estos paquetes encapsulados luego se envuelven en un nuevo conjunto de encabezados específicos del protocolo de tunneling que se está utilizando, creando así una capa adicional alrededor de los paquetes originales. Este proceso se repite en cascada si se están utilizando múltiples capas de encapsulación, como en el caso de IPsec y L2TP trabajando en conjunto. Una vez encapsulado, el paquete resultante está listo para ser transmitido a través de la red. A medida que viaja, cada capa de encapsulación se despoja en los nodos receptores correspondientes, revelando su contenido original y permitiendo la entrega precisa de los datos al destino final. Este proceso secuencial de encapsulación y desencapsulación es esencial en la garantía de la integridad, autenticidad y confidencialidad de la información en las complejas redes de comunicación.
+                </p>
+                <p class="text-justify">
+                    <strong>
+                      Aqui una descripción de los pasos necesarios para la encapsulación de paquetes
+                    </strong>
+                   
+                </p>
+
+
+                <p class="text-justify">
+                    
+                    <ol>
+                        <li>
+                            <p><strong>División de Datos en Paquetes:</strong><br>
+                            El proceso comienza dividiendo los datos originales en unidades más pequeñas llamadas paquetes. Cada paquete contiene una porción de la información original y es tratado como una entidad independiente para su transmisión a través de la red.</p>
+                        </li>
+                
+                        <li>
+                            <p><strong>Añadiendo Encabezados:</strong><br>
+                            Cada paquete se equipa con encabezados adicionales que contienen información crucial, como la dirección de origen y destino, detalles de control, y otros metadatos necesarios para la correcta transmisión y entrega. Estos encabezados son esenciales para el enrutamiento y la gestión de la comunicación en la red.</p>
+                        </li>
+                
+                        <li>
+                            <p><strong>Encapsulación Inicial:</strong><br>
+                            Si se está utilizando tunneling, los paquetes con sus encabezados son encapsulados en una nueva capa específica del protocolo de tunneling. Esta encapsulación adicional agrega una capa de seguridad y contexto a los datos, preparándolos para atravesar la red de manera segura.</p>
+                        </li>
+                
+                        <li>
+                            <p><strong>Envío a través de la Red:</strong><br>
+                            Los paquetes encapsulados se transmiten a través de la red. Durante este proceso, los routers y otros dispositivos de red utilizan la información de los encabezados para dirigir los paquetes hacia su destino.</p>
+                        </li>
+                
+                        <li>
+                            <p><strong>Recepción y Desencapsulación:</strong><br>
+                            En el extremo receptor, los paquetes pasan por una secuencia inversa de procesos. Se desencapsulan al llegar al nodo receptor, eliminando las capas de encapsulación adicionales. Cada capa desencapsulada revela los encabezados y datos originales, preparándolos para su procesamiento.</p>
+                        </li>
+                
+                        <li>
+                            <p><strong>Entrega al Destino Final:</strong><br>
+                            Finalmente, los datos originales, ahora libres de encapsulación adicional, son entregados al destino final. Cada capa desencapsulada contribuye a la restauración completa de los datos originales, permitiendo su uso y comprensión por parte del destinatario.</p>
+                        </li>
+                    </ol>
+            
+                    
+                </p>
+             <!--   <p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            -->
+            </div>
+ <!--  Final Primera sección            -->
+
+
+
+  <!--  Inicio Tarjetas            -->
+            
+ <!--  Final tarjetas            -->
+
+  <!--  Inicio Descripción honey Pot            -->
+            <div class="row align-items-center animate__animated animate__bounceInRight">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <img src="img/candado2.png" class="img-fluid" alt="Image" />
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h1 class="display-3 text-center" style="font-family: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Utilidad del encapsulamiento</h1>
+                    
+                    <p class="text-justify">El encapsulamiento de paquetes desempeña un papel fundamental en las redes de comunicación al proporcionar una estructura eficiente y segura para la transmisión de datos. Esta técnica es esencial para superar desafíos inherentes a la diversidad de dispositivos, protocolos y redes interconectadas en el entorno digital actual. Al dividir los datos en paquetes y agregar encabezados informativos, se crea una unidad coherente que puede navegar por la red de manera más efectiva. Además, el encapsulamiento permite la implementación de técnicas avanzadas, como el tunneling, que garantiza la seguridad y la integridad de la información a medida que atraviesa redes potencialmente inseguras. La capacidad de encapsular datos no solo facilita la eficiencia en la transmisión, sino que también proporciona una capa de seguridad esencial, contribuyendo a la protección de datos sensibles y a la preservación de la integridad de la información en los complejos entornos de comunicación modernos.</p>
+
+                    
+
+                    
+
+                </div>
+            </div>
+
+            
+  <!--  Final Descripción honey pot            -->
+
+
+
+
+
+  <!--  Inicio equipoi           -->
+
+            
+
+  <!--  FInal eqiopo            -->
+<!--
+            <div class="row align-items-center animate__animated animate__backInUp">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+                    <form>
+                        <div class="mb-2">
+                            <label for="txtEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="txtComment" class="form-label">Comment</label>
+                            <textarea class="form-control" id="txtComment" rows="7"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 mt-3">
+                    <img src="img/image2.JPG" class="img-fluid" alt="Image" />
+                </div>
+            </div>
+-->
+
+
+  <!--  Inicio footer          -->
+            <div class="row">
+                <footer class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Temas
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-white">
+                                <li><a class="dropdown-item" href="honeyindex.html">Honey Nets</a></li>
+                                <li><a class="dropdown-item" href="tunnelingindex.html">tunelización</a></li>
+                                <li><a class="dropdown-item" href="iotindex.html">IoT</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a href="equipo.html" class="nav-link px-2 text-muted">Equipo</a></li>
+                    </ul>
+                    <p class="text-center text-muted">© <span id="currentYear"></span> Facultad de Matemáticas UADY</p>
+                </footer>
+            </div>
+    
+  <!--  Final footer           -->
+        </div>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!-- Custom JS -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
