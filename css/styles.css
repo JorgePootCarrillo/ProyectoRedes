@@ -1,32 +1,58 @@
 body {
-    background: #ffefba; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffffff, #ffefba); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffffff, #ffefba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  background-color: #d9bcaf;
+  background-image: linear-gradient(315deg, #d9bcaf 0%, #97d9e1 100%);
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #006570e4;
+}
+
+a {
+text-decoration: none;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.foot {
+  color: #6c757d !important;
+  font-weight: bolder;
 }
 
 .nav-link {
-    font-weight: 600;
+  font-weight: 600;
+}
+
+.btn {
+  color: #fff !important;
 }
 
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 .card:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .card-text {
-    text-align: justify;
+  text-align: justify;
 }
 
 #txtComment {
-    resize: none;
+  resize: none;
 }
 
 @media (max-width: 576px) {
-    .card-text {
-        font-size: 0.8rem;
-    }
+  .card-text {
+    font-size: 0.8rem;
+  }
 }
